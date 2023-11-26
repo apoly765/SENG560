@@ -1,0 +1,39 @@
+Menu
+  1) Calculator
+  2) Display Practice Tables
+  Option?: 1
+What data type would you like (<b>in/<o>ct/<d>ec/<h>ex)? h
+Enter your basic calculation (ie. 8 + 5), separated by spaces: a4 + 10
+a4 + 10
+=
+0xb4
+Want to do more <y>/<n>? y
+Menu
+  1) Calculator
+  2) Display Practice Tables
+  Option?: 1
+What data type would you like (<b>in/<o>ct/<d>ec/<h>ex)? h
+Enter your basic calculation (ie. 8 + 5), separated by spaces: a4 - 10
+a4 - 10
+=
+0x94
+Want to do more <y>/<n>? y
+Menu
+  1) Calculator
+  2) Display Practice Tables
+  Option?: 1
+What data type would you like (<b>in/<o>ct/<d>ec/<h>ex)? h
+Enter your basic calculation (ie. 8 + 5), separated by spaces: 4 * 3
+4 * 3
+=
+0xc
+Want to do more <y>/<n>? y
+Menu
+  1) Calculator
+  2) Display Practice Tables
+  Option?: 1
+What data type would you like (<b>in/<o>ct/<d>ec/<h>ex)? h
+Enter your basic calculation (ie. 8 + 5), separated by spaces: 14 / 5
+14 / 5
+=
+0x4

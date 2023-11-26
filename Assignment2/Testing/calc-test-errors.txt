@@ -1,0 +1,14 @@
+hello & welcome to a reuse calculator
+Menu
+  1) Calculator
+  2) Display Practice Tables
+  Option?: 3
+  Option?: 1
+What data type would you like (<b>in/<o>ct/<d>ec/<h>ex)? f
+What data type would you like (<b>in/<o>ct/<d>ec/<h>ex)? g
+What data type would you like (<b>in/<o>ct/<d>ec/<h>ex)? d
+Enter your basic calculation (ie. 8 + 5), separated by spaces: 8 + 6 + 5
+Enter your basic calculation (ie. 8 + 5), separated by spaces: 8 + 5
+8 + 5
+=
+13

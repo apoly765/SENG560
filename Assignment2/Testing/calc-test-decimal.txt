@@ -1,0 +1,40 @@
+hello & welcome to a reuse calculator
+Menu
+  1) Calculator
+  2) Display Practice Tables
+  Option?: 1
+What data type would you like (<b>in/<o>ct/<d>ec/<h>ex)? d
+Enter your basic calculation (ie. 8 + 5), separated by spaces: 82 + 18
+82 + 18
+=
+100
+Want to do more <y>/<n>? y
+Menu
+  1) Calculator
+  2) Display Practice Tables
+  Option?: 1
+What data type would you like (<b>in/<o>ct/<d>ec/<h>ex)? d
+Enter your basic calculation (ie. 8 + 5), separated by spaces: 99 - 15
+99 - 15
+=
+84
+Want to do more <y>/<n>? y
+Menu
+  1) Calculator
+  2) Display Practice Tables
+  Option?: 1
+What data type would you like (<b>in/<o>ct/<d>ec/<h>ex)? d
+Enter your basic calculation (ie. 8 + 5), separated by spaces: 8 * 7
+8 * 7
+=
+56
+Want to do more <y>/<n>? y
+Menu
+  1) Calculator
+  2) Display Practice Tables
+  Option?: 1
+What data type would you like (<b>in/<o>ct/<d>ec/<h>ex)? d
+Enter your basic calculation (ie. 8 + 5), separated by spaces: 99 / 11
+99 / 11
+=
+9
