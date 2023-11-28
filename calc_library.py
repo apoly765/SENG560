@@ -5,70 +5,10 @@
 
 import string
 
+
 #def main(operation, type1, op1, op2):  -- possible future use as input parms
-def main():
-
-    cont = 'y'
-    while(cont.lower() == 'y' ):
-
-        # get operation & ensure it is a valid type
-        operation = input("What operation would you like? (A)dd/(S)ubtract/(M)ultiply/(D)ivide: ").lower()
-        while (operation not in ('a','s','m','d')):
-            operation = input("Please enter a valid operation (a/s/m/d): ").lower()
-
-        # get data type and ensure it is valid    
-        type1 = input("What data type are your operands? (I)nteger/(F)loat/(S)cientific/(E)ngineering/(B)inary/(O)ctal/(H)ex: ").lower()
-        while(type1 not in ('i','f','s','e','b','o','h')):
-            type1 = input("Please enter a valid type. (I)nteger/(F)loat/(S)cientific/(E)ngineering/(B)inary/(O)ctal/(H)ex: ").lower()
-
-        # Possible future - add output type rather than using the same one
-
-        # get operands and ensure they are valid for the type
-        check = True
-        while check:
-            op1 = input("Operand 1: ")
-            op2 = input("Operand 2: ")
-
-            try:
-                match type1:
-                    case 'i':
-                        #integer
-                        op1=int(op1)
-                        op2=int(op2)
-                        result = 0
-                    case 'f':
-                        #float
-                        op1=float(op1)
-                        op2=float(op2)
-                        result = 0.0
-                    case 's':
-                        #scientific
-                        op1=float(op1)
-                        op2=float(op2)
-                        result = 0.0E0
-                    case 'e':
-                        #engineering
-                        op1=float(op1)
-                        op2=float(op2)
-                        result = 0.0E0    
-                    case 'b':
-                        #binary
-                        op1=int(op1, 2)
-                        op2=int(op2, 2)
-                        result = 0
-                    case 'o':
-                        #octal
-                        op1=int(op1, 8)
-                        op2=int(op2, 8)
-                        result = 0
-                    case 'h':
-                        #hex
-                        op1=int(op1, 16)
-                        op2=int(op2, 16)
-                        result = 0
-                check = False
-            except ValueError:
-                print("Operands do not match specified type of", type1, ".  Try Again") 
+def domath(operation,type1,op1,op2):
+    
 
         # perform the math            
         match operation:
@@ -102,10 +42,10 @@ def main():
             case 'h': #hex
                     result = hex(result)
 
-        #return(result)
-        print(result)
+        return(result)
+        
 
-        cont=input("Do another? (y/n) ")
+        
 
 
 def add(op1, op2):
@@ -142,4 +82,4 @@ def engr_notation(value):
     return(str(new_value) + "E" + str(new_exp))   
 
 
-main()
+
