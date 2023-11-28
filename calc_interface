@@ -1,0 +1,81 @@
+import calc_library
+
+def main(): 
+    cont = 'y'
+    while(cont.lower() == 'y' ):
+        # get operation & ensure it is a valid type
+        operation = input("What operation would you like? (A)dd/(S)ubtract/(M)ultiply/(D)ivide: ").lower()
+        while (operation not in ('a','s','m','d')):
+            operation = input("Please enter a valid operation (a/s/m/d): ").lower()
+
+        # get data type and ensure it is valid    
+        type1 = input("What data type are your operands? (I)nteger/(F)loat/(S)cientific/(E)ngineering/(B)inary/(O)ctal/(H)ex: ").lower()
+        while(type1 not in ('i','f','s','e','b','o','h')):
+            type1 = input("Please enter a valid type. (I)nteger/(F)loat/(S)cientific/(E)ngineering/(B)inary/(O)ctal/(H)ex: ").lower()
+
+        # Possible future - add output type rather than using the same one
+
+        # get operands and ensure they are valid for the type
+        check = True
+        while check:
+            op1 = input("Operand 1: ")
+            op2 = input("Operand 2: ")
+
+            try:
+                match type1:
+                    case 'i':
+                        #integer
+                        op1=int(op1)
+                        op2=int(op2)
+                        result = 0
+                        typeout = "(I)nteger"
+                    case 'f':
+                        #float
+                        op1=float(op1)
+                        op2=float(op2)
+                        result = 0.0
+                        typeout = "(F)loat"
+                    case 's':
+                        #scientific
+                        op1=float(op1)
+                        op2=float(op2)
+                        result = 0.0E0
+                        typeout = "(S)cientific"
+                    case 'e':
+                        #engineering
+                        op1=float(op1)
+                        op2=float(op2)
+                        result = 0.0E0    
+                        typeout = "(E)ngineering"
+                    case 'b':
+                        #binary
+                        op1=int(op1, 2)
+                        op2=int(op2, 2)
+                        result = 0
+                        typeout = "(B)inary"
+                    case 'o':
+                        #octal
+                        op1=int(op1, 8)
+                        op2=int(op2, 8)
+                        result = 0
+                        typeout = "(O)ctal"
+                    case 'h':
+                        #hex
+                        op1=int(op1, 16)
+                        op2=int(op2, 16)
+                        result = 0
+                        typeout = "(H)ex"
+                check = False
+            except ValueError:
+                
+                    
+
+                print("Operands do not match specified type of", typeout, ".  Try Again") 
+            
+            result = calc_library.domath(operation,type1,op1,op2) #call the library 
+
+            print(result)
+            
+            cont=input("Do another? (y/n) ")
+        
+main()
